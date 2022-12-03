@@ -40,7 +40,7 @@ const signAccessToken = async (payload) => {
 
 	const token = await sign(payload, key, {
 		algorithm: 'ES256',
-		expiresIn: '15m',
+		expiresIn: '1m',
 		header: accessHeader,
 	});
 
